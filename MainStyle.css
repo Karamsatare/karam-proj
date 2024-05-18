@@ -1,0 +1,173 @@
+
+header {
+	
+    background-color: #0F172A; /* لون خلفية الهيدر */
+    color: #6989A4; /* لون النص في الهيدر */
+    padding: 0px 0; /* تباعد داخلي للهيدر */
+    margin-left: 0;
+    align-items: center;
+    border-radius :25px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    align-items: center
+}
+body {
+    /* background-image: url('BackGround.png');*/
+    background-color: #CBD5E1;
+    background-size: cover; /* تغطية الصورة على كامل الشاشة */
+    /*background-position: center;  وضعية الصورة في الوسط */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+}
+
+.container {
+    
+    width: 20%; /* عرض الهيدر */
+    margin: 0 auto;  /*لتوسيط الهيدر في الصفحة */
+    display: flex; /* استخدام تخطيط مرن */
+    justify-content: space-between; /* توزيع العناصر بالتساوي على طول المسافة الأفقية */
+    align-items: center; /* توسيط العناصر عموديًا */
+}
+
+.logo {
+cursor: pointer;
+    width: 4%; /* عرض الشعار */
+    height: 4%; /* للحفاظ على نسب الأبعاد */
+}
+nav{
+    margin-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding : 10px 0;
+}
+
+nav ul {
+    list-style-type: none; /* إزالة نقاط القوائم */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block; /* عرض العناصر جنبًا إلى جنب */
+    margin:10px 20px; /* تباعد بين العناصر */
+}
+.container li{
+    text-decoration-color: #0a1014;
+}
+nav ul li a {
+    color: #fff; /* لون الروابط */
+    text-decoration: none; /* إزالة التأثيرات النصية الافتراضية */
+}
+.container-wallpaper{
+    padding: 2rem;
+    width: max-content;
+}
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto; 
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%.0.25);
+    border-radius: 15px;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align:start ;
+    object-fit:cover ;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute ;
+    bottom: 1.25rem;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+display: flex;
+}
+.contactus{
+  float: left;
+  width: 45%;
+  padding: 15px;
+
+}
+.more {
+  float: left;
+  width: 45%;
+  padding: 15px;
+}
+.more a{
+	color:black;
+}
+.contactus a{
+	color:black;
+}
+.footer {
+	clear: both;
+    margin-top: auto; /* Pushes the footer to the bottom */
+	background-color: #0F172A;
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	border-radius:25px;
+        }
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+	background-color: #007BFF;
+    border-radius: 50%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logos:hover {
+    background-size: 110%;
+}
+
+
+.logos.insta {
+    background-image: url('instag.webp');
+}
+
+.logos.facebook {
+    background-image: url('facebook.webp');
+}
+
+.logos.x {
+    background-image: url('x.avif');
+}
+
+.logos.linkedin {
+    background-image: url('linkedin.png');
+}

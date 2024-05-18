@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Circular Links</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer {
+            margin-top: auto; /* Pushes the footer to the bottom */
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .circular-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 50%;
+            font-size: 10px;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Remove default link underline */
+            background-size: cover; /* Make the background image cover the circular link */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .circular-link:hover {
+            background-size: 110%; /* Zoom in slightly on hover */
+           
+        }
+
+        /* Add specific styles for Instagram link */
+        .circular-link.insta {
+            background-image: url('instag.webp'); /* Set Instagram icon as background */
+        }
+		 .circular-link.facebook {
+            background-image: url('facebook.webp');
+        }
+
+        .circular-link.linkedin {
+            background-image: url('linkedin.png');
+        }
+
+        .circular-link.x {
+            background-image: url('x.avif');
+    </style>
+</head>
+<body>
+    <!-- Other content of the page -->
+
+    <div class="footer">
+        <div class="links">
+            <a href="#" class="circular-link insta"></a>
+             <a href="#" class="circular-link facebook"></a>
+            <a href="#" class="circular-link x"></a>
+            <a href="#" class="circular-link linkedin"></a>
+        </div>
+    </div>
+</body>
+</html>

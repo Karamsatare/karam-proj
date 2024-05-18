@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hup</title>
+    <link rel="stylesheet" href="MainStyle.css"> <!-- رابط لملف الأنماط -->
+</head>
+<body>
+    <header>
+        <nav>               
+            <img src="HealthLogo.png" alt="the Logo Health hup" class="logo" >
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">روية العيادة</a></li>
+                <li><a href="#">المدونة</a></li>
+                <li><a href="#"> العيادات</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container-wallpaper">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1"src="2.png">
+                <img id="slide-2"src="3.png">
+                <img id="slide-3"src="4.png">
+                <img id="slide-4"src="5.png">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+            </div>
+        </div>
+        
+    </section>
+    <div class="Box-Text">
+            <h1>Health Hup</h1>
+            <h2>العيادة الطبية العالمية</h2>
+            <p>العيادة الطبية العالمية</p>
+            <a href="#">المزيد</a>
+        </div>
+		
+<div class="contactus">
+<fieldset><legend>Contact Us</legend>
+<p>Health Hup
+</br>Amman Jordan
+</br>p.o.Box 0000 Amman
+</br>Call:(+962)77-0000000
+</br>Email:<a href = "@">karam@gmail.com</a>
+</br>Email:<a href = "@">huzayfa@gmail.com</a>
+</p>
+  </div>	
+  <div class="more">
+  <fieldset><legend>More Information</legend>
+  <p><a href = "@">About Health Hup</a>
+</br><a href = "@">Terms of use</a>
+</br><a href = "@">Help center</a>
+</br><a href = "@">Account</a>
+</p>
+ </div>	
+ <div class="footer">
+    <div class="links">
+        <a href="#" class="logos insta"></a>
+        <a href="#" class="logos facebook"></a>
+        <a href="#" class="logos x"></a>
+        <a href="#" class="logos linkedin"></a>
+    </div>
+</div>
+<div>
+    <script>
+        // JavaScript code for automatic slideshow
+        function nextSlide() {
+            const sliderImages = document.querySelectorAll('.slider img');
+            const currentSlide = document.querySelector('.slider img.active');
+
+            let nextSlide;
+            if (currentSlide.nextElementSibling) {
+                nextSlide = currentSlide.nextElementSibling;
+            } else {
+                nextSlide = sliderImages[0];
+            }
+
+            currentSlide.classList.remove('active');
+            nextSlide.classList.add('active');
+        }
+
+        function startSlideShow() {
+            setInterval(nextSlide, 2000);
+        }
+
+        window.onload = function() {
+            startSlideShow();
+        };
+    </script>
+    </body>
+    
+</html>
+
